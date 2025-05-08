@@ -100,14 +100,6 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 
 ```
-### Generate token using service account in the namespace
-apiVersion: v1
-kind: Secret
-type: kubernetes.io/service-account-token
-metadata:
-  name: mysecretname
-  annotations:
-    kubernetes.io/service-account.name: jenkins
 
 ### Generate token using service account in the namespace
 
